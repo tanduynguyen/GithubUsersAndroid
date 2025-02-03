@@ -6,14 +6,19 @@ data class User(
     @SerializedName("id")
     var id: Int,
     @SerializedName("login")
-    var login: String
-//    let id: Int
-//    let login: String
-//    var avatar_url: URL?
-//    var html_url: URL?
-//    var blog: URL?
-//    var location: String?
-//    var followers: Int?
-//    var following: Int?
-//    var name: String?
+    var login: String,
+    @SerializedName("avatar_url")
+    var avatarUrl: String?,
+    @SerializedName("html_url")
+    var htmlUrl: String?,
+    @SerializedName("blog")
+    var blog: String?,
+    @SerializedName("location")
+    var location: String?,
+    @SerializedName("followers")
+    var followers: Int?,
+    @SerializedName("following")
+    var following: Int?,
+    @SerializedName("name")
+    var name: String?
 )
